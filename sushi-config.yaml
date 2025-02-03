@@ -3,9 +3,9 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.cz.img-report
+id: hl7.fhir.cz.img
 canonical: https://hl7.cz/fhir/img #!!change here!!
-name: HL7CzImagingImplementationGuide
+name: HL7CzImagingReportImplementationGuide
 title: HL7 Czech Imaging Report IG
 description: Czech Imaging Report Implementation Guide
 status: draft # draft | active | retired | unknown
@@ -37,6 +37,7 @@ publisher:
 dependencies:
   hl7.fhir.uv.ips: 1.1.0
   hl7.fhir.cz.core: current
+  hl7.fhir.eu.base.r4: current
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -62,16 +63,16 @@ dependencies:
 pages:
   index.md:
     title: Home
-# general-guidance.md:
-#   title: General Guidance
+  profile-guidance.md:
+    title: Profile Guidance
 # identifiers.md:
 #   title: Identifiers
-# artifacts.xml:
-#   title: Summary artifacts
+  artifacts.xml:
+    title: Summary artifacts
 # profiles-and-extensions.md:
 #   title: Profiles and extensions
-# downloads.md:
-#   title: Download
+  downloads.md:
+    title: Download
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -142,14 +143,14 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-#  Guidance:
-#    General guidance: general-guidance.html
+  Guidance:
+    Profile guidance: profile-guidance.html
 #    Identifiers: identifiers.html
-#  Artifacts:
-#    Czech artifacts: artifacts.html
+  Artifacts:
+    Profile artifacts: artifacts.html
 #    Profiles and extensions: profiles-and-extensions.html
-#  About:
-#    Downloads: downloads.html
+  About:
+    Downloads: downloads.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
