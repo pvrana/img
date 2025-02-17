@@ -1,7 +1,7 @@
-Logical: HeaderImageReportCz
-Id: HeaderImageReport
-Title: "A.1 - Image Report header data element"
-Description: """Image Report - Image Report header data element - A.1"""
+Logical: HeaderImagingReportCz
+Id: HeaderImagingReport
+Title: "A.1 - Imaging Report header data element"
+Description: """Imaging Report - Imaging Report header data element - A.1"""
 * subject 1..1 SubjectCz "A.1.1 - Identification and A.1.2 - related contact information of the Patient/subject" """Identification of the patient/subject and Patient/subject related contact information"""
 * payer 0..1 BackboneElement "A.1.3 - Health insurance and payment information - Health insurance information is not always required, however, in some jurisdictions, the insurance number is also used as the patient identifier. It is necessary not just for identification but also forms access to funding for care." """Health insurance and payment information - Health insurance information is not always required, however, in some jurisdictions, the insurance number is also used as the patient identifier. It is necessary not just for identification but also forms access to funding for care."""
 * payer.insuranceCode 0..1 Identifier "A.1.3.1 - Health insurance code" """Unique health insurance company identification code."""
@@ -35,10 +35,10 @@ Description: """Image Report - Image Report header data element - A.1"""
 * legalAuthenticator.dateTime 1..1 dateTime "A.1.7.5 - Authentication date and time" """Date and time when the document was authorised."""
 * documentMetadata 1..1 BackboneElement "A.1.8 - Document metadata" """Document metadata"""
 * documentMetadata.identifier 1..1 Identifier "A.1.8.1 - Document ID" """Unique identifier of the document"""
-* documentMetadata.type 1..1 CodeableConcept "A.1.8.2 - Document type" """Identifies the type of document at hand, e.g. Image report."""
-* documentMetadata.status 1..1 CodeableConcept "A.1.8.3 - Document status" """The status of the Image report. E.g., preliminary, final."""
-* documentMetadata.dateTime 1..1 dateTime "A.1.8.4 - Report date and time" """Date and time of the Image report creation."""
-* documentMetadata.title 1..1 string "A.1.8.5 - Document title" """Document title, fix value "Image report"."""
+* documentMetadata.type 1..1 CodeableConcept "A.1.8.2 - Document type" """Identifies the type of document at hand, e.g. Imaging report."""
+* documentMetadata.status 1..1 CodeableConcept "A.1.8.3 - Document status" """The status of the Imaging report. E.g., preliminary, final."""
+* documentMetadata.dateTime 1..1 dateTime "A.1.8.4 - Report date and time" """Date and time of the Imaging report creation."""
+* documentMetadata.title 1..1 string "A.1.8.5 - Document title" """Document title of the Imaging report."""
 * documentMetadata.custodian 1..1 BackboneElement "A.1.8.6 - Report custodian" """Organisation that is in charge of maintaining the report [this element will include organisation ID, name, address etc., as other elements describing organisations]."""
 * documentMetadata.confidentiality 1..1 CodeableConcept "A.1.8.7 - Confidentiality" """Level of confidentiality of the document. Implicit value is normal."""
 * documentMetadata.language 1..1 CodeableConcept "A.1.8.8 - Language" """Language in which the document is written. Language is expressed by the ISO language code."""

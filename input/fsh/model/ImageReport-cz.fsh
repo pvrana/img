@@ -1,10 +1,10 @@
-Logical: ImageReportCz
-Id: ImageReportCz
-Title: "A - Image Report (eHN)"
-Description: """Image Report"""
-* header 1..1 HeaderImageReport "A.1 - Image Report header data element" """Image Report header data element"""
-* body 1..1 BackboneElement "A.2 - Image Report body data element" """Image Report body data element"""
-* body.presentedForm 0..1 BackboneElement "A.2.0 - Image Report in its narrative form" """Image Report in its narrative form"""
+Logical: ImagingReportCz
+Id: ImagingReportCz
+Title: "A - Imaging Report (eHN)"
+Description: """Imaging Report"""
+* header 1..1 HeaderImagingReport "A.1 - Imaging Report header data element" """Imaging Report header data element"""
+* body 1..1 BackboneElement "A.2 - Imaging Report body data element" """Imaging Report body data element"""
+* body.presentedForm 0..1 BackboneElement "A.2.0 - Imaging Report in its narrative form" """Imaging Report in its narrative form"""
 * body.informationAboutOrder 0..* InformationAboutOrder "A.2.1 - Information about the order" """Information about the order"""
 * body.reasonForAdmission 0..1 ReasonForAdmission "A.2.2 - Reason for Admission" """Reason for Admission"""
 * body.sampleInformation 0..* SampleInformation "A.2.3 - Sample information" """Sample information """
