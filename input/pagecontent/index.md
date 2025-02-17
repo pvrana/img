@@ -12,7 +12,7 @@ Basic Sections of the Imaging Report
 
 | Section |	Cardinality	| Obligation | Link |
 | - | - | - | - |
-| A.1 Header with Administrative Document Data | 1..1 |	Mandatory | Link |
+| A.1 Header with Administrative Document Data | 1..1 |	Mandatory |  |
 | A.2 Document Content | 1..1 | Mandatory | - |
 | A.2.1 Information about the order | 0..* | Mandatory | Link |
 | A.2.2 Reason for Admission | 0..1 | Mandatory | Link |
