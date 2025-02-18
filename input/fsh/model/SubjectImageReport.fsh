@@ -2,6 +2,10 @@ Logical: SubjectImagingReportCz
 Id: SubjectCz
 Title: "A.1.1 - Identification and A.1.2 - related contact information of the Patient/subject"
 Description: """Imaging Report - Imaging Report subject data element - A.1.1 and A.1.2"""
+
+* insert SetFmmandStatusRule ( 1, draft )
+* ^language = #cs
+
 * subjectIdentification 1..1 BackboneElement "A.1.1 - Identification of the patient/subject" """Identification of the patient/subject"""
 * subjectIdentification.given 1..* string "A.1.1.1 - Given name" """The given name/first name of the patient (also known as forename or first name). This field can contain more than one element."""
 * subjectIdentification.family 1..* string "A.1.1.2 - Family name/surname" """The family name/surname/last name of the patient. This field can contain more than one element or multiple fields could be present."""

@@ -10,6 +10,7 @@ title: HL7 Czech Imaging Report IG
 description: Czech Imaging Report Implementation Guide
 status: draft # draft | active | retired | unknown
 version: 0.0.1
+language: cs
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -38,6 +39,8 @@ dependencies:
   hl7.fhir.uv.ips: 1.1.0
   hl7.fhir.cz.core: current
   hl7.fhir.eu.base.r4: current
+  hl7.fhir.extensions.r5: 4.0.1
+  hl7.fhir.eu.extensions: current
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -96,6 +99,7 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
 #    - https://ncez.mzcr.cz/fhir/CodeSystem/contact-role-supplement
 #    - https://ncez.mzcr.cz/fhir/CodeSystem/snomed-supplement-service-type
 #    - http://ncez.mzcr.cz/fhir/StructureDefinition/address-point-cz
+# path-expansion-params: '../../expansion-params.json' # for using SNOMED CT Czech Extension
 # path-resource:
 #    - input/resources
 #    - fsh-generated/resources
@@ -240,7 +244,7 @@ menu:
 # * date
 # * meta
 # * implicitRules
-# * language
+# * language = #cs
 # * text
 # * contained
 # * extension

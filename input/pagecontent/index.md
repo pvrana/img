@@ -49,3 +49,6 @@ This guide is divided into several pages which are listed at the top of each pag
 
 {% include ip-statements.xhtml %}
 
+### Globals Table
+{% include globals-table.xhtml %}
+

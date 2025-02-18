@@ -2,6 +2,10 @@ Logical: ImagingReportCz
 Id: ImagingReportCz
 Title: "A - Imaging Report (eHN)"
 Description: """Imaging Report"""
+
+* insert SetFmmandStatusRule ( 1, draft )
+* ^language = #cs
+
 * header 1..1 HeaderImagingReport "A.1 - Imaging Report header data element" """Imaging Report header data element"""
 * body 1..1 BackboneElement "A.2 - Imaging Report body data element" """Imaging Report body data element"""
 * body.presentedForm 0..1 BackboneElement "A.2.0 - Imaging Report in its narrative form" """Imaging Report in its narrative form"""

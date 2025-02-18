@@ -2,6 +2,10 @@ Logical: HeaderImagingReportCz
 Id: HeaderImagingReport
 Title: "A.1 - Imaging Report header data element"
 Description: """Imaging Report - Imaging Report header data element - A.1"""
+
+* insert SetFmmandStatusRule ( 1, draft )
+* ^language = #cs
+
 * subject 1..1 SubjectCz "A.1.1 - Identification and A.1.2 - related contact information of the Patient/subject" """Identification of the patient/subject and Patient/subject related contact information"""
 * payer 0..1 BackboneElement "A.1.3 - Health insurance and payment information - Health insurance information is not always required, however, in some jurisdictions, the insurance number is also used as the patient identifier. It is necessary not just for identification but also forms access to funding for care." """Health insurance and payment information - Health insurance information is not always required, however, in some jurisdictions, the insurance number is also used as the patient identifier. It is necessary not just for identification but also forms access to funding for care."""
 * payer.insuranceCode 0..1 Identifier "A.1.3.1 - Health insurance code" """Unique health insurance company identification code."""
