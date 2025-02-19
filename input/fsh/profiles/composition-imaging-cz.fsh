@@ -35,9 +35,9 @@ Description: "This profile defines how to represent Composition resource in HL7 
 * identifier ^short = "Imaging Report business identifier"
 * status ^short = "Imaging Report status"
 * type only http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips
-* type ^short = "Kind of composition (\"Hospital Discharge Report\")"
+* type ^short = "Kind of composition (\"Imaging Report\")"
 * type ^definition = "Specifies that this composition refer to a Imaging Report"
-* type = $loinc#81220-6 "Imaging Report"
+* type = $loinc#81220-6 "Diagnostic imaging report - recommended C-CDA R2.0 and R2.1 sections"
 * subject only Reference(CZ_PatientCore)
 * subject 1..1
 * subject ^definition = "Who or what the composition is about. \r\nIn general a composition can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure).\r\nFor the hdr the subject is always the patient."
