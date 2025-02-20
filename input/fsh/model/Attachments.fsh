@@ -2,7 +2,7 @@ Logical: AttachmentsCz
 Id: Attachments
 Title: "A.2.6 - Media (attachments)"
 Description: """Imaging Report - Imaging Report media (attachments) - A.2.6
-Klíčové snímky související s touto zprávou."""
+Key images related to this report."""
 
 * insert SetFmmandStatusRule ( 1, draft )
 * ^language = #cs

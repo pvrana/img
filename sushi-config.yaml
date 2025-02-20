@@ -68,6 +68,10 @@ pages:
     title: Home
   profile-guidance.md:
     title: Profile Guidance
+  general-semantics.md:
+    title: General Semantics in a National Context
+  use-cases.md:
+    title: Use Cases
 # identifiers.md:
 #   title: Identifiers
   artifacts.xml:
@@ -148,7 +152,8 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
 menu:
   Home: index.html
   Guidance:
-    Profile guidance: profile-guidance.html
+   General semantics: general-semantics.html
+   Use cases: use-cases.html
 #    Identifiers: identifiers.html
   Artifacts:
     Profile artifacts: artifacts.html
