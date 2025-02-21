@@ -11,7 +11,7 @@ This guide does not describe how to exchange this message.
 The document focuses on the standardization of the content of structured electronic records from imaging methods (radiological methods, nuclear medicine methods, ultrasound methods, etc.) and metadata, on aspects of interoperability and machine processing, as well as on the expansion of data, e.g. references to related records, selected DICOM data from imaging studies, additional attachments, etc. The document also focuses on aspects related to the exchange and sharing of these reports using information technology.
 
 ### Excluded Areas
-The document does not cover the area of image documentation in the form of digital image records (studies) from devices. These image studies are created, processed, stored, and transmitted in standardized formats and using communication protocols of the international DICOM standard. For transmission or sharing between healthcare providers, there are currently two exchange networks available in the Czech Republic (ePACS and ReDiMed) based on the DICOM standard.
+The document does not cover the area of image documentation in the form of digital image records (studies) from devices. These image studies are created, processed, stored, and transmitted in standardized formats and using communication protocols of the international DICOM standard. For transmission or sharing between healthcare providers, there are currently many exchange networks available in the Czech Republic based on the DICOM standard.
 
 ### Model
 Basic Sections of the Imaging Report

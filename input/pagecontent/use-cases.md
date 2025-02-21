@@ -50,7 +50,7 @@ On the healthcare providers' side, these systems refer to similar systems as on 
 An EHR (Electronic Health Record) system refers to systems for the collection and sharing of electronic health records of patients within an affinity domain, for example, based on infrastructural IHE profiles.
 
 #### eHealth Services
-eHealth services refer to electronic healthcare services, such as IDRR, eREG, NCP, eMeDocS, etc. as well as intermediary services, such as the state's basic registry services.
+eHealth services refer to electronic healthcare services, such as IDRR, eREG, NCP, etc. as well as intermediary services, such as the state's basic registry services.
 
 ### Creation of Report
 
