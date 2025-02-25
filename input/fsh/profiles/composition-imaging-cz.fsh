@@ -1,5 +1,5 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile: CZ_CompositionImaging
+Profile: CZ_CompositionImagingReport
 Parent: Composition
 Id: cz-composition-imaging
 //Id: composition-cz-imaging
