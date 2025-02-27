@@ -1,7 +1,7 @@
 Profile: CZ_ObservationResultImaging
 Parent: Observation
 Id: cz-observation-result-imaging
-Title: "Observation Imaging (CZ)"
+Title: "Observation: Imaging Report (CZ)"
 Description: """This profile constrains the Observation resource to represent results produced by imaging report or panels/studies.
 
 This observation may represent the result of a imaging report
@@ -95,4 +95,4 @@ This observation may represent the result of a imaging report
 
 * derivedFrom only Reference(DocumentReference or ImagingStudy or Media or QuestionnaireResponse or MolecularSequence or CZ_ObservationResultImaging)
 * derivedFrom MS
-* derivedFrom ^short = "In the initial iteration of the Czech interoperability project: this can be ObservationLaboratory (CZ) or Media"
+* derivedFrom ^short = "In the initial iteration of the Czech interoperability project: this can be Observation (CZ) or Media"

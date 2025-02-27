@@ -1,7 +1,7 @@
 Profile: CZ_Medication
 Parent: Medication
 Id: cz-medication
-Title: "Medication"
+Title: "Medication (CZ)"
 Description: "This profile defines how to represent Medicationin HL7 FHIR for the scope of this guide."
 * ^publisher = "HL7 CZ"
 * ^copyright = "HL7 Czech Republic"

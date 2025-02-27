@@ -1,6 +1,6 @@
 An imaging report is an important source of information for healthcare professionals across all types of healthcare providers regarding the patient's health status and any medical complications. The REPORT is considered crucial because the attending physician determines the further course of action based on the medical findings contained in the report. REPORTS from previous examinations, even those conducted for other healthcare providers, are important for assessing the development of the patient's health status or complications. The availability of these REPORTS among healthcare providers is a significant need in modern medicine.
 
-Imaging methods are complementary health services that are performed exclusively upon request (a service request) by the attending physician who ordered the examination. The attending physician may not be from the same healthcare facility. The primary recipient of the IMAGING REPORT is the attending physician who ordered the examination. However, the REPORTS can also serve as a source of information for various other recipients, including the patient and can be a source of information useful for other purposes.
+Imaging methods are complementary health services that are performed exclusively upon request (a service request) by the attending physician who ordered the examination. The attending physician does not have to be from the same healthcare facility. The primary recipient of the IMAGING REPORT is the attending physician who ordered the examination. However, the REPORTS can also serve as a source of information for various other recipients, including the patient and can be a source of information useful for other purposes.
 
 The exchange or sharing of REPORTS among different entities is mostly non-standardized and does not allow the nature of the data contained in this medical documentation to be determined without actually opening and reading the document.
 
@@ -33,7 +33,7 @@ A recipient is anyone to whom the report (document) is intended (in the sense of
 A recipient is generally a person, organization or information system. It can be specific (e.g. referring physician) or non-specific (able to search and access the patient's health records).
 
 The recipient can be understood from different levels of abstraction as:
-- Referring physician (including cases where delivery is through the patient).
+- Referring physician (including cases where transmission occurs through a patient).
 - Workplace of the referring physician (e.g. hospital ward of the same or another provider).
 - Another healthcare provider (e.g. registered physician, continuity of care, emergency care) or providers of health or social services upon request for documentation, if the patient is under their care and it is necessary for that care.
 - Patient, including a legal guardian or a representative with granted consent.

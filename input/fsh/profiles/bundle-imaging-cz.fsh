@@ -8,12 +8,12 @@ Expression: "( (entry.resource.ofType(Composition).subject.empty() and entry.res
 Severity:    #error
 
 Invariant: one-comp
-Description: "A laboratory report bundle SHALL include one and only one Composition"
+Description: "A imaging report bundle SHALL include one and only one Composition"
 Expression: "entry.resource.ofType(Composition).count() = 1"
 Severity:    #error
 
 Invariant: one-dr
-Description: "A laboratory report SHALL include one and only one DiagnosticReport"
+Description: "A imaging report SHALL include one and only one DiagnosticReport"
 Expression: "entry.resource.ofType(DiagnosticReport).count() = 1"
 Severity:    #error
 
@@ -23,7 +23,7 @@ Severity:    #error
 Profile: CZ_BundleImagingReport
 Parent: Bundle
 Id: cz-bundle-imaging
-Title: "Bundle - Imaging report CZ"
+Title: "Bundle: Imaging Report (CZ)"
 Description: "Clinical document used to represent a Imaging Report for the scope of this guide."
 * ^purpose = "Imaging report bundle is an electronic health record extract containing results of imaging from a subject of care, comprising at least the required elements of the imaging dataset."
 * ^publisher = "HL7 CZ"

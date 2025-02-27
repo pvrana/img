@@ -1,8 +1,7 @@
 Logical: AttachmentsCz
 Id: Attachments
 Title: "A.2.6 - Media (attachments)"
-Description: """Imaging Report - Imaging Report media (attachments) - A.2.6
-Key images related to this report."""
+Description: """Imaging Report - Imaging Report media (attachments) - A.2.6 \r\nKey images related to this report."""
 
 * insert SetFmmandStatusRule ( 1, draft )
 * ^language = #cs

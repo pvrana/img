@@ -1,7 +1,7 @@
 Profile: CZ_DiagnosticReport
 Parent: DiagnosticReport
 Id: cz-diagnostic-report
-Title: "DiagnosticReport: Imaging Report"
+Title: "DiagnosticReport: Imaging Report (CZ)"
 Description: "Diagnostic Report used to represent an entry of a Imaging Report, including its context, for the scope of the Czech national interoperability project."
 * ^publisher = "HL7 CZ"
 * ^copyright = "HL7 Czech Republic"

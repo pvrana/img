@@ -1,9 +1,9 @@
 Profile: CZ_Specimen
 Parent: Specimen
 Id: cz-specimen
-Title: "Specimen for Imaging Report (CZ)"
+Title: "Specimen: Imaging Report (CZ)"
 Description: "Czech profile for a specimen in a imaging report. In some imaging reports, specimen information is allowed to be minimal as many informations concerning the specimen are implied by the observations done."
-* ^url = "https://ncez.mzcr.cz/standards/fhir/ig/img/StructureDefinition/cz-specimen-lab"
+* ^url = "https://ncez.mzcr.cz/standards/fhir/ig/img/StructureDefinition/cz-specimen"
 * ^version = "0.0.1"
 * ^status = #draft
 * ^publisher = "Národní centrum elektronického zdravotnictví"

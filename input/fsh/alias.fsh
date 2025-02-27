@@ -4,6 +4,7 @@ Alias: $sct =  http://snomed.info/sct
 Alias: $orpha = https://www.orpha.net
 Alias: $loinc =  http://loinc.org
 Alias: $iso3166 = urn:iso:std:iso:3166
+Alias: $media-category = http://terminology.hl7.org/CodeSystem/media-category
 
 // --- EU Imaging Report Profiles
 Alias: $BundleEuImagingReport = http://hl7.eu/fhir/imaging/StructureDefinition/im-bundle

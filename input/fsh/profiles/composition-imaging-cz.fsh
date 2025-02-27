@@ -3,7 +3,7 @@ Profile: CZ_CompositionImagingReport
 Parent: Composition
 Id: cz-composition-imaging
 //Id: composition-cz-imaging
-Title: "Composition (Imaging Report CZ)"
+Title: "Composition: Imaging Report (CZ)"
 Description: "This profile defines how to represent Composition resource in HL7 FHIR for the scope of this guide."
 * . ^short = "Imaging Report composition"
 * . ^definition = """

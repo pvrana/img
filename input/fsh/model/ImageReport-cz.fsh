@@ -1,6 +1,6 @@
 Logical: ImagingReportCz
 Id: ImagingReportCz
-Title: "A - Imaging Report (eHN)"
+Title: "A - Imaging Report"
 Description: """Imaging Report"""
 
 * insert SetFmmandStatusRule ( 1, draft )
