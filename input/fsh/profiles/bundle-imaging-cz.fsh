@@ -30,6 +30,7 @@ Description: "Clinical document used to represent a Imaging Report for the scope
 * ^copyright = "HL7 CZ"
 * . ^short = "Imaging Report Bundle"
 * . ^definition = "Imaging Report Bundle. \r\nA container for a collection of resources in the inmaging report document."
+* ^language = #cs
 
 * insert ImposeProfile($BundleEuImagingReport, 0)
 * insert SetFmmandStatusRule ( 0, draft )

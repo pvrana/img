@@ -1,7 +1,7 @@
 Profile: CZ_ServiceRequest
 Parent: ServiceRequest
 Id: cz-service-request
-Title: "ServiceRequest: Obrazová žádanka"
+Title: "ServiceRequest: Imaging order"
 Description: "ServiceRequest used to represent a Imaging Order for the scope of the Czech national interoperability project."
 
 // Clarify when to use ServiceRequest and RequestGroup

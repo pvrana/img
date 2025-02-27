@@ -40,3 +40,16 @@ RuleSet: ImposeProfile ( profile, index )
 
 RuleSet: ValuSetSupplementRule (codeSystem)
 * ^extension[http://hl7.org/fhir/StructureDefinition/valueset-supplement].valueCanonical = {codeSystem}
+
+RuleSet: SliceElement( type, path )
+* ^slicing.discriminator.type = {type}
+* ^slicing.discriminator.path = "{path}"
+* ^slicing.rules = #open
+* ^slicing.ordered = false
+
+RuleSet: SliceElementWithDescription( type, path, description )
+* ^slicing.discriminator.type = {type}
+* ^slicing.discriminator.path = "{path}"
+* ^slicing.rules = #open
+* ^slicing.description = "{description}"
+* ^slicing.ordered = false
