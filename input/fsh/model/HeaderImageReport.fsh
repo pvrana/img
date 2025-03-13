@@ -4,7 +4,6 @@ Title: "A.1 - Imaging Report header data element"
 Description: """Imaging Report - Imaging Report header data element - A.1"""
 
 * insert SetFmmandStatusRule ( 1, draft )
-* ^language = #cs
 
 * subject 1..1 SubjectCz "A.1.1 - Identification and A.1.2 - related contact information of the Patient/subject" """Identification of the patient/subject and Patient/subject related contact information"""
 * payer 0..1 BackboneElement "A.1.3 - Health insurance and payment information - Health insurance information is not always required, however, in some jurisdictions, the insurance number is also used as the patient identifier. It is necessary not just for identification but also forms access to funding for care." """Health insurance and payment information - Health insurance information is not always required, however, in some jurisdictions, the insurance number is also used as the patient identifier. It is necessary not just for identification but also forms access to funding for care."""
@@ -19,7 +18,7 @@ Description: """Imaging Report - Imaging Report header data element - A.1"""
 * informationRecipient.address 0..1 Address "A.1.4.5 - Address" """Mailing and home or office addresses. The addresses are always sequences of address parts (e.g. street address line, country, postcode, city) even if postal address formats may vary depending on the country. An address may or may not include a specific use code; if this attribute is not present it is assumed to be the default address useful for any purpose."""
 * informationRecipient.country 1..1 CodeableConcept "A.1.4.6 - Country" """Country of the intended recipient as part of the address."""
 * informationRecipient.telecom 0..* ContactPoint "A.1.4.7 - Telecom" """Telecommunication contact information (addresses) associated to a person, such as phone number, email, or messaging service. Multiple telecommunication addresses might be provided."""
-* author 1..* BackboneElement "A.1.5 - Author (by whom the Hospital discharge report was/were authored). Multiple authors could be provided." """Author (by whom the Hospital discharge report was/were authored). Multiple authors could be provided."""
+* author 1..* BackboneElement "A.1.5 - Author (by whom the Imaging report was/were authored). Multiple authors could be provided." """Author (by whom the Hospital discharge report was/were authored). Multiple authors could be provided."""
 * author.identifier 1..* Identifier "A.1.5.1 - Author identifier" """The health professional identifier that will allow addressing recipients within a national or international data exchange infrastructure, such as the licence or registration number. In case when the recipient is not a health professional, e.g. patient, appropriate personal identifier should be used."""
 * author.name 1..1 HumanName "A.1.5.2 - Author name" """Person name [the structure of the name will be the same as for the patient (given name, family name / surname)]."""
 * author.organizationID 0..* Identifier "A.1.5.3 - Author organisation ID" """The healthcare provider organisation identifier. Identifier that is unique within a defined scope. Example: National healthcare provider ID. Multiple identifiers could be provided."""
