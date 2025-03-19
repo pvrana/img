@@ -110,7 +110,7 @@ Description: """Imaging Report - Imaging Report report of imaging method - A.2.4
 * conclusion.text 1..1 string "A.2.4.10.1 - Conclusion text" """Narrative text description of the clinical conclusion."""
 * conclusion.code 0..1 CodeableConcept "A.2.4.10.2 - Coded conclusion" """Coded clinical findings - conditions or observations (one or the other). Commonly used staging systems (TNM, Bi-Rads, Li-Rads, etc.) can be expressed as a condition with staging (typically TNM, but also others) or as coded observations (Bi-Rads, Li-Rads, etc.).
 - Preferred system(s): TNM, Bi-Rads, Li-Rads"""
-* recommendation 0..1 string "A.2.4.11 - Recommendation" """This section contains recommendations for follow-up examinations or procedures that resulted from the results and/or conclusions. The structured part of this item is identical to the item of the same name in the discharge report."""
+* recommendation 0..1 string "A.2.4.11 - Recommendation" """This section contains recommendations for follow-up examinations or procedures that resulted from the results and/or conclusions. The structured part of this item is identical to the item of the same name in the imaging report."""
 * textPartsOfDocument 0..1 BackboneElement "A.2.4.12 - Text parts of the document" """Summary text (narrative) parts of the document."""
 * textPartsOfDocument.completeExaminationReport 0..1 string "A.2.4.12.1 - Complete examination report" """The complete examination report, as issued."""
 * textPartsOfDocument.comments 0..1 string "A.2.4.12.2 - Comments, interpretations and recommendations" """Comments, such as textual interpretations or recommendations, that are part of the examination report."""

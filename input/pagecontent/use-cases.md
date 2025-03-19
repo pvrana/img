@@ -64,7 +64,7 @@ The report should contain both machine-readable and human-readable content!
 #### Creation of an Interoperable Structured Document for Imaging Reports
 
 **Purpose**
-A summary of the inpatient healthcare episode for a healthcare professional, including the transfer of relevant medical information to ensure continuity of care, which is 'sent' (i.e. delivered) to the patient's physician and/or another designated recipient upon discharge from the hospital.
+A summary of the inpatient healthcare episode for a healthcare professional, including the transfer of relevant medical information to ensure continuity of care, which is 'sent' (i.e. delivered) to the patient's physician and/or another designated recipient upon imaging from the hospital.
 
 **Significance**
 The evaluation of information from imaging methods and its communication (delivery) to the referring physician. The originator (healthcare provider) is obligated to retain the report as a separate part of the medical documentation for a legislatively mandated period and to deliver it to the referring physician and upon request, in justified cases, also to other healthcare professionals.

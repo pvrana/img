@@ -8,18 +8,9 @@ Usage: #definition
 * experimental = true
 * description = """CZ Imaging Report Header Model to this guide mapping"""
 
-* group[+].source = "https://hl7.cz/fhir/img/StructureDefinition/payer"
-* group[=].target = "https://hl7.cz/fhir/core/StructureDefinition/cz-organization-core"
-* group[=].element[+].code = #Header.payer.insuranceCode
-* group[=].element[=].display = "A.1.3.1 - Health insurance code"
-* group[=].element[=].target.code = #Organization.identifier
-* group[=].element[=].target.display = ""
-* group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[+].code = #Header.payer.insuranceName
-* group[=].element[=].display = "A.1.3.2 - Health insurance name"
-* group[=].element[=].target.code = #Organization.name
-* group[=].element[=].target.display = ""
-* group[=].element[=].target.equivalence = #equivalent					
+* sourceUri = "https://hl7.cz/fhir/img/StructureDefinition/ImagingReportCz"
+* targetUri = "https://hl7.cz/fhir/img/StructureDefinition/cz-composition-imaging"
+				
 * group[+].source = "https://hl7.cz/fhir/img/StructureDefinition/SubjectCz"
 * group[=].target = "https://hl7.cz/fhir/core/StructureDefinition/cz-patient-base"
 * group[=].element[+].code = #Header.subject
@@ -34,18 +25,40 @@ Usage: #definition
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
 * group[=].element[=].target.comment = "If treated as one of the Patient identifiers; this applies in some jurisdictions."
-* group[+].source = "https://hl7.cz/fhir/img/StructureDefinition/author"
-* group[=].target = "https://hl7.cz/fhir/core/StructureDefinition/cz-practitionerrole-core"
-* group[=].element[+].code = #Header.informationRecipient.identifier
-* group[=].element[=].display = "A.1.4.1 - Recipient identifier"
-* group[=].element[=].target.code = #PractitionerRole.identifier
+* group[+].source = "https://hl7.cz/fhir/img/StructureDefinition/PayerCz"
+* group[=].target = "https://hl7.cz/fhir/core/StructureDefinition/cz-organization-core"
+* group[=].element[+].code = #Header.payer.insuranceCode
+* group[=].element[=].display = "A.1.3.1 - Health insurance code"
+* group[=].element[=].target.code = #Organization.identifier
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[=].target.comment = "Composition.extension:information-recipient.valueReference.resolve()"
-* group[+].source = "https://hl7.cz/fhir/img/StructureDefinition/author"
+* group[=].element[+].code = #Header.payer.insuranceName
+* group[=].element[=].display = "A.1.3.2 - Health insurance name"
+* group[=].element[=].target.code = #Organization.name
+* group[=].element[=].target.display = ""
+* group[=].element[=].target.equivalence = #equivalent	
+* group[+].source = "https://hl7.cz/fhir/img/StructureDefinition/CoverageReportCz"
+* group[=].target = "https://hl7.cz/fhir/img/StructureDefinition/CoverageCz"
+* group[=].element[+].code = #Header.coverage
+* group[=].element[=].display = "A.1.4 - Information about coverage"
+* group[=].element[=].target.code = #Composition.extension:basedOn:order					
+* group[=].element[=].target.display = ""
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "Composition.section:sectionPayers.entry.ofType(Coverage)"
+* group[=].element[+].code = #Header.coverage.method
+* group[=].element[=].display = "A.1.4.1 - Coverage method"
+* group[=].element[=].target.code = #Coverage.type					
+* group[=].element[=].target.display = ""
+* group[=].element[=].target.equivalence = #equivalent					
+* group[=].element[+].code = #Header.coverage.informationPayor
+* group[=].element[=].display = "A.1.4.2 - Information about Payor"
+* group[=].element[=].target.code = #Coverage.payor					
+* group[=].element[=].target.display = ""
+* group[=].element[=].target.equivalence = #equivalent					
+* group[+].source = "https://hl7.cz/fhir/img/StructureDefinition/AuthorCz"
 * group[=].target = "https://hl7.cz/fhir/core/StructureDefinition/cz-practitionerrole-core"
 * group[=].element[+].code = #Header.author
-* group[=].element[=].display = "A.1.5 - Author (by whom the Hospital discharge report was/were authored). Multiple authors could be provided."
+* group[=].element[=].display = "A.1.5 - Author (by whom the Imaging report was/were authored)"
 * group[=].element[=].target.code = #PractitionerRole
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
@@ -72,7 +85,7 @@ Usage: #definition
 * group[=].element[=].target.code = #PractitionerRole.organization					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent	
-* group[+].source = "https://hl7.cz/fhir/img/StructureDefinition/attester"
+* group[+].source = "https://hl7.cz/fhir/img/StructureDefinition/AttesterCz"
 * group[=].target = "https://hl7.cz/fhir/core/StructureDefinition/cz-practitionerrole-core"					
 * group[=].element[+].code = #Header.attester
 * group[=].element[=].display = "A.1.6 - Attester (multiple attesters could be provided)"
@@ -100,7 +113,7 @@ Usage: #definition
 * group[=].element[=].target.code = #PractitionerRole.organization					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent	
-* group[+].source = "https://hl7.cz/fhir/img/StructureDefinition/legalAuthenticator"
+* group[+].source = "https://hl7.cz/fhir/img/StructureDefinition/LegalAuthenticatorCz"
 * group[=].target = "https://hl7.cz/fhir/core/StructureDefinition/cz-practitionerrole-core"				
 * group[=].element[+].code = #Header.legalAuthenticator
 * group[=].element[=].display = "A.1.7 - Legal authenticator (The person taking responsibility for the medical content of the document)"
@@ -132,7 +145,7 @@ Usage: #definition
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
 * group[=].element[=].target.comment = "where attester.mode = 'legal'"
-* group[+].source = "https://hl7.cz/fhir/img/StructureDefinition/documentMetadata"
+* group[+].source = "https://hl7.cz/fhir/img/StructureDefinition/DocumentMetadataCz"
 * group[=].target = "https://hl7.cz/fhir/img/StructureDefinition/cz-bundle-imaging"
 * group[=].element[+].code = #Header.documentMetadata.identifier
 * group[=].element[=].display = "A.1.8.1 - Document ID"
@@ -158,51 +171,25 @@ Usage: #definition
 * group[=].element[=].target.code = #Composition.extension:basedOn:order			
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "To be disucssed if the payor data are conveyed with the request or thorugh other means. Check also the extension to be used."
-* group[=].element[+].code = #Header.payer
-* group[=].element[=].display = "A.1.3 - Health insurance and payment information - Health insurance information is not always required, however, in some jurisdictions, the insurance number is also used as the patient identifier. It is necessary not just for identification but also forms access to funding for care."
-* group[=].element[=].target.code = #Composition.section:sectionPayers.entry	
+* group[=].element[=].target.comment = "Composition.section:sectionPayers.entry.ofType(Coverage)"
+* group[=].element[+].code = #Header.coverage
+* group[=].element[=].display = "A.1.4 - Information about coverage - Information about method of coverage, payer identification data and additional information."
+* group[=].element[=].target.code = #Composition.extension:basedOn:order					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #relatedto					
 * group[=].element[=].target.comment = "Composition.section:sectionPayers.entry.ofType(Coverage)"
-* group[=].element[+].code = #Header.informationRecipient
-* group[=].element[=].display = "A.1.4 - Information recipient - (intended recipient or recipients of the report), if applicable"
-* group[=].element[=].target.code = #Composition.extension:information-recipient					
-* group[=].element[=].target.display = ""
-* group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "Composition.extension:information-recipient.valueReference.resolve().ofType(PracittionerRole)"
-* group[=].element[+].code = #Header.informationRecipient.name
-* group[=].element[=].display = "A.1.4.2 - Recipient name"
-* group[=].element[=].target.code = #PractitionerRole.practitioner.name					
+* group[=].element[+].code = #Header.coverage.method
+* group[=].element[=].display = "A.1.4.1 - Coverage method"
+* group[=].element[=].target.code = #Coverage.type					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[+].code = #Header.informationRecipient.organizationID
-* group[=].element[=].display = "A.1.4.3 - Recipient organisation ID"
-* group[=].element[=].target.code = #PractitionerRole.practitioner.organization.identifier					
+* group[=].element[+].code = #Header.coverage.informationPayor
+* group[=].element[=].display = "A.1.4.2 - Information about Payor"
+* group[=].element[=].target.code = #Coverage.payor					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[+].code = #Header.informationRecipient.organization
-* group[=].element[=].display = "A.1.4.4 - Recipient organisation"
-* group[=].element[=].target.code = #PractitionerRole.practitioner.organization		
-* group[=].element[=].target.display = ""
-* group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[+].code = #Header.informationRecipient.address
-* group[=].element[=].display = "A.1.4.5 - Address"
-* group[=].element[=].target.code = #PractitionerRole.address
-* group[=].element[=].target.display = ""
-* group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[+].code = #Header.informationRecipient.country
-* group[=].element[=].display = "A.1.4.6 - Country"
-* group[=].element[=].target.code = #PractitionerRole.country
-* group[=].element[=].target.display = ""
-* group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[+].code = #Header.informationRecipient.telecom
-* group[=].element[=].display = "A.1.4.7 - Telecom"
-* group[=].element[=].target.code = #PractitionerRole.telecom
-* group[=].element[=].target.display = ""
-* group[=].element[=].target.equivalence = #relatedto					
 * group[=].element[+].code = #Header.author
-* group[=].element[=].display = "A.1.5 - Author (by whom the Hospital discharge report was/were authored). Multiple authors could be provided."
+* group[=].element[=].display = "A.1.5 - Author (by whom the imaging report was/were authored)"
 * group[=].element[=].target.code = #Composition.author					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
@@ -287,31 +274,3 @@ Usage: #definition
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
 * group[=].element[=].target.comment = "As business version, not as resource version"
-// * group[+].source = "http://hl7.eu/fhir/imaging/StructureDefinition/ehn-medical-imaging-report-header"
-// * group[=].target = "http://hl7.org/fhir/StructureDefinition/Coverage"
-// * group[=].element[+].code = #Header.payer.insuranceCode
-// * group[=].element[=].display = "A.1.3.1 - Health insurance code"
-// * group[=].element[=].target.code = #Coverage.payor
-// * group[=].element[=].target.display = ""
-// * group[=].element[=].target.equivalence = #relatedto					
-// * group[=].element[=].target.comment = "Coverage.payor.ofType(Organization)"
-// * group[=].element[+].code = #Header.payer.insuranceName
-// * group[=].element[=].display = "A.1.3.2 - Health insurance name"
-// * group[=].element[=].target.code = #Coverage.payor
-// * group[=].element[=].target.display = ""
-// * group[=].element[=].target.equivalence = #relatedto					
-// * group[=].element[=].target.comment = "Coverage.payor.ofType(Organization)"
-// * group[=].element[+].code = #Header.payer.insuranceNumber
-// * group[=].element[=].display = "A.1.3.3 - Health insurance number"
-// * group[=].element[=].target.code = #Coverage.beneficiary
-// * group[=].element[=].target.display = ""
-// * group[=].element[=].target.equivalence = #relatedto					
-// * group[=].element[=].target.comment = "Coverage.beneficiary.ofType(Patient)"
-//* group[+].source = "http://hl7.eu/fhir/imaging/StructureDefinition/ehn-medical-imaging-report-header"
-* group[=].target = "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
-* group[=].element[+].code = #Header.payer
-* group[=].element[=].display = "A.1.3 - Health insurance and payment information - Health insurance information is not always required, however, in some jurisdictions, the insurance number is also used as the patient identifier. It is necessary not just for identification but also forms access to funding for care."
-* group[=].element[=].target.code = #ServiceRequest.insurance
-* group[=].element[=].target.display = ""
-* group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "ServiceRequest.insurance.ofType(Coverage)"

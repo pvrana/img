@@ -3,13 +3,6 @@ Parent: Specimen
 Id: cz-specimen
 Title: "Specimen: Imaging Report (CZ)"
 Description: "Czech profile for a specimen in a imaging report. In some imaging reports, specimen information is allowed to be minimal as many informations concerning the specimen are implied by the observations done."
-* ^url = "https://ncez.mzcr.cz/standards/fhir/ig/img/StructureDefinition/cz-specimen"
-* ^version = "0.0.1"
-* ^status = #draft
-* ^publisher = "Národní centrum elektronického zdravotnictví"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://ncez.mzcr.cz"
-* ^jurisdiction = $iso3166#CZ 
 
 * insert SetFmmandStatusRule ( 0, draft )
 
